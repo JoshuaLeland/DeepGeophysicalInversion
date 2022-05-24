@@ -19,3 +19,5 @@ Expected Progression.
 3 - Same as above.
 
 4 -> Physics embeddings 1..n -> transformer -> Model.
+
+Deepmind uses Graph NNs for their flud simulators.  We can try this too.
