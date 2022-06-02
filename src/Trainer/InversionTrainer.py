@@ -18,12 +18,12 @@ class InversionTrainer:
         self.optimizer = optimizer
 
 
-    def train(self, num_iters, print_iters=10):
+    def train(self, num_iters, print_iters=10, print=False):
         for iter in range(num_iters):
             self.optimizer.zero_grad()
             loss = self._iter_()
 
-            if num_iters % print_iters == print_iters - 1:
+            if print and (num_iters % print_iters == print_iters - 1):
                 print("iter: %d".format(iter), "loss: {:.5f}".format(loss))
 
             loss.backward()
