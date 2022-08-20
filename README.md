@@ -21,3 +21,7 @@ Expected Progression.
 4 -> Physics embeddings 1..n -> transformer -> Model.
 
 Deepmind uses Graph NNs for their flud simulators.  We can try this too.
+
+After reading more there is a few ways to do this. We can use SimPeg as for scaling the inverse.
+
+There is also Half inverse gradients, so will restructure this to for each method.
